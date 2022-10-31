@@ -1,6 +1,10 @@
-def add(x, y):
-    return x + y
+def numbers(x, y, operand):
+    if operand == "+":
+        return x + y
+    elif operand == "-":
+        return x - y
 
 x = float(input())
 y = float(input())
-print(add(x, y))
+operand = str(input())
+print(numbers(x, y, operand))
